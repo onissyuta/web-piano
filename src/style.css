@@ -1,0 +1,28 @@
+.keyboard {
+    display: flex;
+    height: 10em;
+}
+
+.key {
+    position: relative;
+}
+
+.key.white {
+    width: 2em;
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 1;
+}
+
+.key.black {
+    --width: 1.5em;
+    width: var(--width);
+    height: 60%;
+    background: #000;
+    margin: 0 calc(var(--width) / -2) 0;
+    z-index: 2;
+}
+
+.key.white:hover {
+    background: #eee;
+}
